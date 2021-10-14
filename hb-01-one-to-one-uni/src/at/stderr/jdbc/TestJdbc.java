@@ -6,13 +6,14 @@ import java.sql.DriverManager;
 public class TestJdbc {
 
     public static void main(String[] args) {
-        String jdbcURL = "jdbc:postgresql://worker01.lan.stderr.at:32101/hb-01-one-to-one-uni";
-        String username = "";
-        String password = "";
+        String jdbcURL = "jdbc:postgresql://worker04.lan.stderr.at:32101/hb_student_tracker?schema=hb-01-one-to-one-uni";
+        String username = "hbstudent";
+        String password = "hbstudent";
 
         try {
             Connection myConn = DriverManager.getConnection(jdbcURL, username, password);
             System.out.println(myConn);
+            System.out.println("Connection successful!");
         }
         catch (Exception exc) {
             exc.printStackTrace();
