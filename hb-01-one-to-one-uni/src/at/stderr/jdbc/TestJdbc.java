@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class TestJdbc {
 
     public static void main(String[] args) {
-        String jdbcURL = "jdbc:postgresql://worker04.lan.stderr.at:32101/hb_student_tracker?schema=hb-01-one-to-one-uni";
+        String jdbcURL = "jdbc:postgresql://lb.lan.stderr.at:5432/hb_student_tracker?schema=hb-01-one-to-one-uni";
         String username = "hbstudent";
         String password = "hbstudent";
 

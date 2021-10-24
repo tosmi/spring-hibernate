@@ -8,7 +8,7 @@
 
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://worker01.lan.stderr.at:32101/hb_student_tracker?schema=hb-01-one-to-one-uni</property>
+        <property name="connection.url">jdbc:postgresql://lb.lan.stderr.at:5432/hb_student_tracker?schema=hb-01-one-to-one-uni</property>
         <property name="connection.username">hbstudent</property>
         <property name="connection.password">hbstudent</property>
 
