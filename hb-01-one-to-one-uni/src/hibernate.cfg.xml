@@ -5,12 +5,12 @@
 <hibernate-configuration>
 
     <session-factory>
-
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://lb.lan.stderr.at:5432/hb_student_tracker?schema=hb-01-one-to-one-uni</property>
+        <property name="connection.url">jdbc:postgresql://lb.lan.stderr.at:5432/hb_student_tracker</property>
         <property name="connection.username">hbstudent</property>
         <property name="connection.password">hbstudent</property>
+        <property name="hibernate.default_schema">hb_01_one_to_one_uni</property>
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>

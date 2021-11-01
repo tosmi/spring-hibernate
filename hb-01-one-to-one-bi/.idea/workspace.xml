@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca663ef9-bc42-43b1-85d8-5cdcb4cc7171" name="Changes" comment="work on section 23">
+      <change afterPath="$PROJECT_DIR$/.idea/ClojureProjectResolveSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/hb-01-one-to-one-uni.t3RrCg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/hb_01_one_to_one_uni.RceAWg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hb-01-one-to-one-uni.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/FastInfoset-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/byte-buddy-1.10.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/checker-qual-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/classmate-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dom4j-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hibernate-commons-annotations-5.1.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hibernate-core-5.4.29.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/istack-commons-runtime-3.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jandex-2.2.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javassist-3.27.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jaxb-runtime-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jboss-logging-3.4.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.2.24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/stax-ex-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/txw2-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/at/stderr/at/stderr/hibernate/demo/CreateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/at/stderr/at/stderr/hibernate/demo/DeleteDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/at/stderr/hibernate/demo/entity/Instructor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/at/stderr/hibernate/demo/entity/InstructorDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/at/stderr/jdbc/TestJdbc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/resources/V1_create_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/hb-01-one-to-one-uni/resources/sql_statements.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/at/stderr/hibernate/demo/CreateDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/at/stderr/hibernate/demo/DeleteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/at/stderr/hibernate/demo/DeleteInstructorDetailDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/at/stderr/hibernate/demo/GetInstructorDetailDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/hibernate/demo/entity/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/hibernate/demo/entity/InstructorDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/stderr/jdbc/TestJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/V1_create_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/sql_statements.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/hb_01_one_to_one_uni.RceAWg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/libraries/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/at/stderr/at/stderr/hibernate/demo/CreateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/at/stderr/hibernate/demo/entity/Instructor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/at/stderr/hibernate/demo/entity/InstructorDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/at/stderr/jdbc/TestJdbc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/resources/sql_statements.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/at/stderr/at/stderr/hibernate/demo/DeleteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/resources/sql_statements.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/hb-01-one-to-one-uni.t3RrCg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/hb-01-one-to-one-uni.t3RrCg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/hb_student_tracker.78N-XA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/dataSources/30f95b24-2672-46eb-b80f-724808faecde/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/hb-01-one-to-one-uni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/hb-01-one-to-one-uni.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/resources/V1_create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/out/production/hb-01-one-to-one-uni/resources/V1_create_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/at/stderr/at/stderr/hibernate/demo/CreateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/at/stderr/at/stderr/hibernate/demo/CreateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/resources/V1_create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../hb-01-one-to-one-uni/src/resources/V1_create_database.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="postgresql/api-ocp-lan-stderr-at:6443/ocpadmin" />
+    <option name="namespace" value="postgresql" />
+  </component>
+  <component name="ProjectId" id="20HTGmt2ptuV9UWHabB1T3EXNpa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3003565" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.stderr.at.stderr.hibernate.demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DeleteInstructorDetailDemo">
+    <configuration name="CreateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.stderr.at.stderr.hibernate.demo.CreateDemo" />
+      <module name="hb-01-one-to-one-uni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.stderr.at.stderr.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.stderr.at.stderr.hibernate.demo.DeleteDemo" />
+      <module name="hb-01-one-to-one-uni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.stderr.at.stderr.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteInstructorDetailDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.stderr.at.stderr.hibernate.demo.DeleteInstructorDetailDemo" />
+      <module name="hb-01-one-to-one-uni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.stderr.at.stderr.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetInstructorDetailDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.stderr.at.stderr.hibernate.demo.GetInstructorDetailDemo" />
+      <module name="hb-01-one-to-one-uni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.stderr.at.stderr.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DeleteInstructorDetailDemo" />
+        <item itemvalue="Application.CreateDemo" />
+        <item itemvalue="Application.GetInstructorDetailDemo" />
+        <item itemvalue="Application.DeleteDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca663ef9-bc42-43b1-85d8-5cdcb4cc7171" name="Changes" comment="" />
+      <created>1635700421348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635700421348</updated>
+      <workItem from="1635700424533" duration="8250000" />
+      <workItem from="1635786770127" duration="2150000" />
+    </task>
+    <task id="LOCAL-00001" summary="work on createdemo">
+      <created>1635701602132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635701602133</updated>
+    </task>
+    <task id="LOCAL-00002" summary="import idea files">
+      <created>1635701654232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635701654232</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="work on createdemo" />
+    <MESSAGE value="import idea files" />
+    <MESSAGE value="work on section 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on section 23" />
+  </component>
+</project>

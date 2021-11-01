@@ -1,8 +1,8 @@
-DROP SCHEMA IF EXISTS "hb-01-one-to-one-uni" cascade;
+DROP SCHEMA IF EXISTS "hb_01_one_to_one_uni" cascade;
 
-CREATE SCHEMA "hb-01-one-to-one-uni";
+CREATE SCHEMA "hb_01_one_to_one_uni";
 
-set search_path to "hb-01-one-to-one-uni", public;
+set search_path to "hb_01_one_to_one_uni", public;
 
 DROP TABLE IF EXISTS "instructor_detail" cascade ;
 
