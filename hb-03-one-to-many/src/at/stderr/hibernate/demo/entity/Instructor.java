@@ -1,6 +1,8 @@
 package at.stderr.hibernate.demo.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="instructor")
@@ -37,6 +39,15 @@ public class Instructor {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
+
+    // mapped by the "instructor" field in the course class
+    @OneToMany(mappedBy = "instructor", cascade = {
+            CascadeType.DETACH,
+            CascadeType.PERSIST,
+            CascadeType.MERGE,
+            CascadeType.REFRESH
+    })
+    private List<Course> courses;
 
     public Instructor() {
     }
@@ -87,6 +98,14 @@ public class Instructor {
         this.instructorDetail = instructorDetail;
     }
 
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
     @Override
     public String toString() {
         return "Instructor{" +
@@ -95,6 +114,20 @@ public class Instructor {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", instructorDetail=" + instructorDetail +
+                // don't do this, courses.toString() calls instructor.toString() which calls
+                // courses.toString() until stack overflow
+                // ", courses=" + courses +
                 '}';
+    }
+
+    // add convience method for bi-directional relationship
+    public void add(Course tempCourse) {
+        if (tempCourse == null) {
+            courses = new ArrayList<>();
+        }
+
+        tempCourse.setInstructor(this);
+
+        courses.add(tempCourse);
     }
 }
