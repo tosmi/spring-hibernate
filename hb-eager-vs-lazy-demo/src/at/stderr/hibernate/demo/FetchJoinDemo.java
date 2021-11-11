@@ -6,8 +6,9 @@ import at.stderr.hibernate.demo.entity.InstructorDetail;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
-public class EagerLazyDemo {
+public class FetchJoinDemo {
 
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
@@ -20,22 +21,29 @@ public class EagerLazyDemo {
         Session session = factory.getCurrentSession();
 
         try {
-            // create the objects
-
             // start the transaction
             session.beginTransaction();
 
+            // option 2: hibernate query with HQL
+
             // get instructor from database
             int theID = 1;
-            Instructor tempInstructor = session.get(Instructor.class, theID);
+            Query<Instructor> query =
+                    session.createQuery("select i from Instructor i "
+                            + "JOIN FETCH i.courses "
+                            + "where i.id = :theInstructorId",
+                            Instructor.class);
+
+            // set parameter on query
+            query.setParameter("theInstructorId", theID);
+
+            // execute query and get instructor
+            Instructor tempInstructor = query.getSingleResult();
 
             System.out.println("luv2code: Instructor: " + tempInstructor);
-            System.out.println("luv2code: Courses: " + tempInstructor.getCourses());
 
             // commit transaction
             session.getTransaction().commit();
-
-            // close session
             session.close();
 
             System.out.println("\nThe session is now closed!\n");
