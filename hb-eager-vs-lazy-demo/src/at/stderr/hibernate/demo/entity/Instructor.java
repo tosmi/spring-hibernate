@@ -41,7 +41,7 @@ public class Instructor {
     private InstructorDetail instructorDetail;
 
     // mapped by the "instructor" field in the course class
-    @OneToMany(fetch = FetchType.EAGER,
+    @OneToMany(fetch = FetchType.LAZY,
             mappedBy = "instructor",
             cascade = {
                     CascadeType.DETACH,

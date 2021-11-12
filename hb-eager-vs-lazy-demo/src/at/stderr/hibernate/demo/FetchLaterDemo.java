@@ -6,8 +6,11 @@ import at.stderr.hibernate.demo.entity.InstructorDetail;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
-public class EagerLazyDemo {
+import java.util.List;
+
+public class FetchLaterDemo {
 
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
@@ -20,28 +23,43 @@ public class EagerLazyDemo {
         Session session = factory.getCurrentSession();
 
         try {
-            // create the objects
-
             // start the transaction
             session.beginTransaction();
+
+            // option 2: hibernate query with HQL
 
             // get instructor from database
             int theID = 1;
             Instructor tempInstructor = session.get(Instructor.class, theID);
 
             System.out.println("luv2code: Instructor: " + tempInstructor);
-            System.out.println("luv2code: Courses: " + tempInstructor.getCourses());
 
             // commit transaction
             session.getTransaction().commit();
-
-            // close session
             session.close();
 
             System.out.println("\nThe session is now closed!\n");
 
             // get courses for the instructor
-            System.out.println("luv2code: Courses: " + tempInstructor.getCourses());
+            System.out.println("\nOpening a new session!\n");
+            // start a new session
+            session = factory.getCurrentSession();
+            session.beginTransaction();
+
+            // execute query and get instructor
+            Query<Course> query =
+                    session.createQuery("select c from Course c "
+                                    + "where c.instructor.id = :theInstructorId",
+                            Course.class);
+
+            // set parameter on query
+            query.setParameter("theInstructorId", theID);
+
+            List<Course> tempCourses = query.getResultList();
+
+            session.getTransaction().commit();
+
+            System.out.println("luv2code: Courses: " + tempCourses);
 
             System.out.println("luv2code: Done!");
         }
