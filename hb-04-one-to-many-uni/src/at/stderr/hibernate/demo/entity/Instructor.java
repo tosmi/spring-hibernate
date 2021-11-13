@@ -41,12 +41,15 @@ public class Instructor {
     private InstructorDetail instructorDetail;
 
     // mapped by the "instructor" field in the course class
-    @OneToMany(mappedBy = "instructor", cascade = {
-            CascadeType.DETACH,
-            CascadeType.PERSIST,
-            CascadeType.MERGE,
-            CascadeType.REFRESH
-    })
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            mappedBy = "instructor",
+            cascade = {
+                    CascadeType.DETACH,
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE,
+                    CascadeType.REFRESH
+            })
     private List<Course> courses;
 
     public Instructor() {
