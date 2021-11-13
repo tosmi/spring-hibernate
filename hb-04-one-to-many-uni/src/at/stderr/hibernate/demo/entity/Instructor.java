@@ -120,7 +120,7 @@ public class Instructor {
                 '}';
     }
 
-    // add convience method for bi-directional relationship
+    // add convince method for bi-directional relationship
     public void add(Course tempCourse) {
         if (tempCourse == null) {
             courses = new ArrayList<>();
