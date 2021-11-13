@@ -1,5 +1,6 @@
 package at.stderr.hibernate.demo;
 
+import at.stderr.hibernate.demo.entity.Course;
 import at.stderr.hibernate.demo.entity.Instructor;
 import at.stderr.hibernate.demo.entity.InstructorDetail;
 import org.hibernate.Session;
@@ -13,11 +14,11 @@ public class GetInstructorDetailDemo {
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDetail.class)
+                .addAnnotatedClass(Course.class)
                 .buildSessionFactory();
 
-        Session session = factory.getCurrentSession();
-
         try {
+            Session session = factory.getCurrentSession();
             session.beginTransaction();
 
             // get the instructor detail object
@@ -28,17 +29,12 @@ public class GetInstructorDetailDemo {
             System.out.println("tempInstructorDetail: " + tempInstructorDetail);
 
             // print associated instructor
-            System.out.println("the associated instructor: " + tempInstructorDetail.getInstructor() );
+            System.out.println("the associated instructor: " + tempInstructorDetail.getInstructor());
 
             // commit transaction
             session.getTransaction().commit();
-        }
-        catch (Exception exception) {
+        } catch (Exception exception) {
             exception.printStackTrace();
-        }
-        finally {
-            session.close();
-            factory.close();
         }
     }
 }
