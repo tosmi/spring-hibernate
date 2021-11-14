@@ -1,8 +1,17 @@
-DROP SCHEMA IF EXISTS "hb_04_one_to_many_uni" cascade;
+DROP SCHEMA IF EXISTS "hb_05_many_to_many" cascade;
 
-CREATE SCHEMA "hb_04_one_to_many_uni";
+CREATE SCHEMA "hb_05_many_to_many";
 
-set search_path to "hb_04_one_to_many_uni", public;
+set search_path to "hb_05_many_to_many", public;
+
+DROP TABLE IF EXISTS "student" cascade;
+
+CREATE TABLE student (
+  id serial primary key,
+  first_name varchar(45) DEFAULT NULL,
+  last_name varchar(45) DEFAULT NULL,
+  email varchar(45) DEFAULT NULL
+);
 
 DROP TABLE IF EXISTS "instructor_detail" cascade ;
 
@@ -38,4 +47,10 @@ CREATE TABLE review (
     course_id int references course(id)
 );
 
+DROP TABLE IF EXISTS "course_studen";
 
+CREATE TABLE course_student (
+    course_id int NOT NULL REFERENCES course(id) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    student_id int NOT NULL REFERENCES student(id) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    PRIMARY KEY (course_id, student_id)
+);

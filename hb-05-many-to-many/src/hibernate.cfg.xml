@@ -10,7 +10,7 @@
         <property name="connection.url">jdbc:postgresql://lb.lan.stderr.at:5432/hb_student_tracker</property>
         <property name="connection.username">hbstudent</property>
         <property name="connection.password">hbstudent</property>
-        <property name="hibernate.default_schema">hb_04_one_to_many_uni</property>
+        <property name="hibernate.default_schema">hb_05_many_to_many</property>
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
