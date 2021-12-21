@@ -9,12 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ed3de3-5eae-4b13-9d0c-3e670b98300d" name="Changes" comment="work on customer entity">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web-customer-tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-customer-tracker.iml" afterDir="false" />
+    <list default="true" id="68ed3de3-5eae-4b13-9d0c-3e670b98300d" name="Changes" comment="idea update">
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/stderr/springdemo/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/stderr/springdemo/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-customer-tracker-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-customer-tracker-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +47,8 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -81,11 +79,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../checkstyle.xml" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42790154" />
-    <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -242,7 +240,8 @@
       <workItem from="1639305701824" duration="1431000" />
       <workItem from="1640000551134" duration="83000" />
       <workItem from="1640000645260" duration="8244000" />
-      <workItem from="1640105557038" duration="1834000" />
+      <workItem from="1640105557038" duration="2711000" />
+      <workItem from="1640115218135" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1640027628175</created>
@@ -265,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640027683500</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="work on customer entity">
+      <created>1640114477228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640114477230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="idea update">
+      <created>1640114492903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640114492903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,8 +298,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work on customer tracker" />
-    <MESSAGE value="idea update" />
     <MESSAGE value="work on customer entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on customer entity" />
+    <MESSAGE value="idea update" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea update" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
