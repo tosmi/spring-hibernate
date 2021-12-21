@@ -1,5 +1,5 @@
 # maven target folder
-*/target/
+**/target/
 
 # User-specific stuff
 */.idea/**/workspace.xml
