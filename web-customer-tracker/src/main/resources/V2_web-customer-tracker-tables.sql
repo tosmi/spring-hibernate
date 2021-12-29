@@ -7,10 +7,17 @@ CREATE TABLE customer (
     email varchar(45) NOT NULL
 );
 
-INSERT INTO customer VALUES
-    (1,'David','Adams','david@luv2code.com'),
-    (2,'John','Doe','john@luv2code.com'),
-    (3,'Ajay','Rao','ajay@luv2code.com'),
-    (4,'Mary','Public','mary@luv2code.com'),
-    (5,'Maxwell','Dixon','max@luv2code.com');
+TRUNCATE TABLE customer;
+
+-- Careful here, do NOT add the id to the insert statement
+-- otherwise the pgsql sequence will not get incremented
+-- this is not mysql, stupid
+INSERT INTO
+    customer(first_name, last_name, email)
+VALUES
+    ('David','Adams','david@luv2code.com'),
+    ('John','Doe','john@luv2code.com'),
+    ('Ajay','Rao','ajay@luv2code.com'),
+    ('Mary','Public','mary@luv2code.com'),
+    ('Maxwell','Dixon','max@luv2code.com');
 
