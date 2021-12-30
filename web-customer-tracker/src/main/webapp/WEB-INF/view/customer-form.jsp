@@ -20,6 +20,9 @@
         <h3>Save Customer</h3>
 
         <form:form action="saveCustomer" modelAttribute="customer" method="post">
+
+            <form:hidden path="id"/>
+
             <table>
                 <tbody>
                 <tr>
@@ -43,7 +46,7 @@
 
         </form:form>
 
-        <div style="clear; both;"></div>
+        <div style="clear:both"></div>
         <p>
             <a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
         </p>
