@@ -11,5 +11,8 @@
 <a href="hello-servlet">Hello Servlet</a>
 <br/>
 <a href="TestDbServlet">TestDb Servlet</a>
+
+<!-- Disable this if you want the links above to be visible -->
+<% response.sendRedirect("customer/list"); %>
 </body>
 </html>
