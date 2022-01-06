@@ -7,8 +7,13 @@ public class MainDemoApp {
 
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(DemoConfig.class);
-         var accountDAO = context.getBean("accountDAO", AccountDAO.class);
+        var accountDAO = context.getBean("accountDAO", AccountDAO.class);
+
         accountDAO.addAccount();
-        context.close();
+
+        System.out.println("\n let's call it again!");
+        accountDAO.addAccount();
+
+         context.close();
     }
 }
