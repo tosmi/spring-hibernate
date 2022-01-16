@@ -16,6 +16,13 @@ public class MainDemoApp {
         accountDAO.addAccount(account, true);
         accountDAO.doWork();
 
+        accountDAO.setName("foo");
+        accountDAO.setServiceCode("1234");
+
+        var name = accountDAO.getName();
+        var code = accountDAO.getServiceCode();
+
+
         membershipDAO.addMemberShipAccount();
         membershipDAO.goToSleep();
 

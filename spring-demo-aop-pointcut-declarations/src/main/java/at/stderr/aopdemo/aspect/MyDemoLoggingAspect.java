@@ -13,13 +13,29 @@ public class MyDemoLoggingAspect {
     @Pointcut("execution(* at.stderr.aopdemo.dao.*.*(..))")
     private void forDAOPackage() { /* Empty because of Pointcut */ }
 
-    @Before("forDAOPackage()")
+    @Pointcut("execution(* at.stderr.aopdemo.dao.*.get*(..))")
+    private void getter() { /* Empty because of Pointcut */ }
+
+    @Pointcut("execution(* at.stderr.aopdemo.dao.*.set*(..))")
+    private void setter() { /* Empty because of Pointcut */ }
+
+    @Pointcut("forDAOPackage() && !(getter() || setter())")
+    private void forDAOPackageNoGetterSetter() { /* Empty because of Pointcut */ }
+
+    // @Before("forDAOPackage()")
+    @Before("forDAOPackageNoGetterSetter()")
     public void beforeAddAccountAdvice() {
-        System.out.println("\n=======>>>> Executing @Before advice on method with pointcut declaration");
+        System.out.println("=======>>>> Executing @Before advice on method with pointcut declaration");
     }
 
-    @Before("forDAOPackage()")
+    // @Before("forDAOPackage()")
+    @Before("forDAOPackageNoGetterSetter()")
     public void beforeApiAnalytics() {
-        System.out.println("\n=======>>>> Performing API analytics");
+        System.out.println("=======>>>> Performing API analytics");
+    }
+
+    @Before("forDAOPackageNoGetterSetter()")
+    public void withoutGetterSetter() {
+        System.out.println("=======>>>> Advice without Getter/Setter");
     }
 }
