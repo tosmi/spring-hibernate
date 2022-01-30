@@ -4,6 +4,7 @@ import at.stderr.aopdemo.Account;
 import at.stderr.aopdemo.dao.AccountDAO;
 import com.google.inject.internal.util.Join;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
@@ -16,6 +17,20 @@ import java.util.Locale;
 @Component
 @Order(2)
 public class MyDemoLoggingAspect {
+
+    @Around("execution(* at.stderr.aopdemo.service.*.getFortune(..))")
+    public Object aroundGetFortune(ProceedingJoinPoint pjp) throws Throwable {
+        String method = pjp.getSignature().toString();
+        System.out.println("\n=====>>>> Executing @Around on method: " + method);
+
+        var begin = System.currentTimeMillis();
+        Object result = pjp.proceed();
+        var end = System.currentTimeMillis();
+
+        var duration = end - begin;
+        System.out.println("\n=====> Duration: " + duration / 1000.0 + "seconds");
+        return result;
+    }
 
     @After("execution(* at.stderr.aopdemo.dao.AccountDAO.findAccounts(..))")
     public void afterFinallyFindAccountsAdvice(JoinPoint jp) {
