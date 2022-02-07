@@ -1,0 +1,6 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(øĞô‚8Ì›¬¹æ/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(›Š±Ïúÿÿÿÿ8Ñ›¬¹æ/
+T	java:S106'"9Replace this use of System.out or System.err by a logger.(êâİ58Ó›¬¹æ/
+R
+java:S1128"=Remove this unused import 'at.stderr.aopdemo.dao.AccountDAO'.(È®

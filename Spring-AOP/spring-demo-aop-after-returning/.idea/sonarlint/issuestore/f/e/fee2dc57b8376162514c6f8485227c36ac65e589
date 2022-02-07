@@ -1,0 +1,20 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŠîíÆÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’šŞşÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(’šŞşÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(øĞô‚
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(‚‰úº
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(Üœé“
+f
+java:S62017"KReplace this instanceof check and cast with 'instanceof Account theAccount'(úÇ“úÿÿÿÿ
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(Ä¸ñ8Í¹Å¾æ/
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(ú›„åûÿÿÿÿ8Î¹Å¾æ/
+R
+java:S1128"=Remove this unused import 'at.stderr.aopdemo.dao.AccountDAO'.(È®
+W
+java:S1128"ARemove this unused import 'com.google.inject.internal.util.Join'.(áô¯ë
+W
+java:S1128
+"ARemove this unused import 'org.aspectj.lang.annotation.Pointcut'.(ˆ“¡¿
+O
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8çé½¾æ/

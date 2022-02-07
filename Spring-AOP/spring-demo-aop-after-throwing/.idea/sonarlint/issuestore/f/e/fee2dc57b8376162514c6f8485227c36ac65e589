@@ -1,0 +1,19 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ú¦™üÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚µ‡8ú£¿æ/
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(ŠîíÆÿÿÿÿÿ8ü£¿æ/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(’šŞşÿÿÿÿ8ü£¿æ/
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(’šŞşÿÿÿÿ8ı£¿æ/
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(øĞô‚8ş£¿æ/
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(‚‰úº8ş£¿æ/
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(Üœé“8‡¦¿æ/
+m
+java:S6201>"KReplace this instanceof check and cast with 'instanceof Account theAccount'(úÇ“úÿÿÿÿ8ı£¿æ/
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(Ä¸ñ8…Û¨¿æ/
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(ú›„åûÿÿÿÿ8†Û¨¿æ/
+R
+java:S1128"=Remove this unused import 'at.stderr.aopdemo.dao.AccountDAO'.(È®
+W
+java:S1128"ARemove this unused import 'com.google.inject.internal.util.Join'.(áô¯ë
+H
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ
