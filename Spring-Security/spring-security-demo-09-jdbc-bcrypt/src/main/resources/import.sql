@@ -1,8 +1,8 @@
-DROP SCHEMA IF EXISTS spring_security_demo_plaintext CASCADE;
+DROP SCHEMA IF EXISTS spring_security_demo_bcrypt CASCADE;
 
-CREATE SCHEMA IF NOT EXISTS spring_security_demo_plaintext;
+CREATE SCHEMA IF NOT EXISTS spring_security_demo_bcrypt;
 
-SET search_path TO "spring_security_demo_plaintext", PUBLIC;
+SET search_path TO "spring_security_demo_bcrypt", PUBLIC;
 
 --
 -- Table structure for table `users`
@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
     username varchar(50) NOT NULL PRIMARY KEY,
-    password varchar(50) NOT NULL,
+    password char(68) NOT NULL,
     enabled boolean
 );
 
@@ -22,9 +22,9 @@ CREATE TABLE users (
 
 INSERT INTO users
 VALUES
-    ('john','{noop}test123',true),
-    ('mary','{noop}test123',true),
-    ('susan','{noop}test123',true);
+    ('john','{bcrypt}$2a$12$h6YvQpphEOmYa9KLaDFy9OBCORho1RJjOwAt4QHe0KzlzuOmpC5Y2 ',true),
+    ('mary','{bcrypt}$2a$12$nrkHgFiXNog7hoRwLOPPpu.gaq4/ohdeaEnEEEK0G92jwr2Xgb9/y ',true),
+    ('susan','{bcrypt}$2a$12$xxf/R3CWHWSGx0YZHZsU.uKiwcnBIvfHLPVhje3pDOB7UX7Ut19/2',true);
 
 --
 -- Table structure for table `authorities`

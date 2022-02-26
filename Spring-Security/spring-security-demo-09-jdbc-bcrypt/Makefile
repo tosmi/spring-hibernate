@@ -1,3 +1,3 @@
 include ../../Makefile
 
-DATABASE := spring_security_demo_plaintext
+DATABASE := spring_security_demo_bcrypt
