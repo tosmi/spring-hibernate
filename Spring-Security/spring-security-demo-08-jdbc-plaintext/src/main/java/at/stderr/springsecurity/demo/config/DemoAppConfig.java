@@ -13,6 +13,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 import java.util.logging.Logger;
 
@@ -42,7 +43,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public Datasource securityDataSource () {
+    public DataSource securityDataSource () {
         ComboPooledDataSource securityDataSource = new ComboPooledDataSource();
 
         try {
@@ -57,7 +58,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
         securityDataSource.setJdbcUrl(env.getProperty("jdbc.url"));
         securityDataSource.setUser(env.getProperty("jdbc.user"));
         securityDataSource.setPassword(env.getProperty("jdbc.password"));
-
+        ;
         securityDataSource.setInitialPoolSize(
                 getIntProperty("connection.pool.initialPoolSize"));
         securityDataSource.setMinPoolSize(
