@@ -5,3 +5,7 @@ Accept: application/json
 ###
 GET http://localhost:8080/spring_rest_demo_war_exploded/api/students
 Accept: application/json
+
+###
+GET http://localhost:8080/spring_rest_demo_war_exploded/api/students/2
+Accept: application/json
