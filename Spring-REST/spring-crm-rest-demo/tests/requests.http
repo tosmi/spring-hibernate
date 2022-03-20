@@ -1,0 +1,20 @@
+### Get all customers
+# @name = GetAllCustomers
+GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers
+Accept: application/json
+
+
+### Get a single customer
+# @name = GetSingleCustomer
+GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers/4
+Accept: application/json
+
+### Get bad customer
+# @name = GetBadCustomer
+GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers/9999
+Accept: application/json
+
+### Get bad request
+# @name = GetBadRequest
+GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers/abcd
+Accept: application/json
