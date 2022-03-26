@@ -3,7 +3,6 @@
 GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers
 Accept: application/json
 
-
 ### Get a single customer
 # @name = GetSingleCustomer
 GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers/4
@@ -17,4 +16,35 @@ Accept: application/json
 ### Get bad request
 # @name = GetBadRequest
 GET http://localhost:8080/spring_crm_rest_war_exploded/api/customers/abcd
+Accept: application/json
+
+### Create a customer  request
+# @name = CreateCustomer
+POST http://localhost:8080/spring_crm_rest_war_exploded/api/customers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Toni",
+  "lastName": "Schmidbauer",
+  "email": "toni@schmidbauer.cc"
+}
+
+### Create a customer  request
+# @name = UpdateCustomer
+PUT http://localhost:8080/spring_crm_rest_war_exploded/api/customers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 7,
+  "firstName": "Franz",
+  "lastName": "Schmidbauer",
+  "email": "toni@schmidbauer.cc"
+}
+
+### Create a customer  request
+# @name = DeleteCustomer
+DELETE http://localhost:8080/spring_crm_rest_war_exploded/api/customers/6
+Content-Type: application/json
 Accept: application/json

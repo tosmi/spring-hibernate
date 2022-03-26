@@ -20,3 +20,7 @@ clean:
 ifneq ($(ID),)
 	podman rm -f postgresql_database
 endif
+
+.PHONY: start
+start:
+	podman start postgresql_database
