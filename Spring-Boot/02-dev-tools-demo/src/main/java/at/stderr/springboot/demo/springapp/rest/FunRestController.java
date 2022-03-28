@@ -15,6 +15,13 @@ public class FunRestController {
 
     @GetMapping("/workout")
     public String getDailyWorkout() {
-        return "Run a hard 10k!";
+        return "Run a hard 15k!";
     }
+
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Today is you lucky day!";
+    }
+
+
 }
