@@ -1,0 +1,7 @@
+###
+# @name = HealthEndpoint
+GET http://localhost:8080/actuator/health
+
+###
+# @name = InfoEndpoint
+GET http://localhost:8080/actuator/info
