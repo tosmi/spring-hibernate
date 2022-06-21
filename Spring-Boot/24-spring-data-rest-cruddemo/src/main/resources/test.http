@@ -1,0 +1,47 @@
+GET http://localhost:8080/api/employees/9999
+Accept: application/json
+
+###
+
+### Delete employee
+DELETE http://localhost:8080/magic-api/employees/6
+Accept: application/json
+
+### Update employee
+PUT http://localhost:8080/magic-api/employees/1
+Content-Type: application/json
+
+{
+  "firstName": "Toni",
+  "lastName": "Schmidbauer",
+  "email": "toni@stderr.at"
+}
+
+### Create employee
+POST http://localhost:8080/magic-api/employees
+Content-Type: application/json
+
+{
+
+  "firstName": "Toni",
+  "lastName": "Schmidbauer",
+  "email": "toni@schmidbauer.cc"
+}
+
+### Get employee
+GET http://localhost:8080/api/employees/2
+Accept: application/json
+
+### Get all employees
+GET http://localhost:8080/magic-api/employees
+Accept: application/json
+
+### Get all employees with sorting
+GET http://localhost:8080/magic-api/employees?sort=lastName,desc
+Accept: application/json
+
+
+### Get all employees page 1
+GET http://localhost:8080/magic-api/employees?page=1
+Accept: application/json
+
